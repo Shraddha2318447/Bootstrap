@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 500px;
+    height: 3000px;
+    border: 3px solid;
+    margin: auto;
+
+    header {
+        display: flex;
+        background-color: rgb(248, 168, 19);
+        position: fixed;
+        height: 45px;
+        width: 495px;
+        justify-content: center;
+        top: 0;
+        z-index: 5;
+
+        .header-search {
+            margin-top: 5px;
+            background-color: white;
+            border: 1px solid;
+            border-radius: 5px;
+            /* box-shadow: 1px 1px 1px 1px; */
+            width: 440px;
+            height: 35px;
+            margin-left: 10px;
+
+            img {
+                width: 30px;
+                padding: 5px;
+                margin-left: 6px;
+            }
+
+            input {
+                width: 310px;
+                word-spacing: 5px;
+                border: 0;
+                margin-top: 5px;
+                font-size: 15px;
+            }
+        }
+
+        .header-scn {
+            /* background-color: blueviolet; */
+            margin-left: 10px;
+            margin-top: 4px;
+
+            img {
+                height: 22px;
+                width: 22px;
+            }
+        }
+    }
+
+    main {
+        .location {
+            margin-top: 42px;
+            height: 35px;
+            display: flex;
+            background-color: rgb(244, 192, 6);
+
+            i {
+                height: 10px;
+                width: 10px;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+
+            h4 {
+                text-align: center;
+                word-spacing: 5px;
+                font-size: 14px;
+                margin-left: 15px;
+                margin-top: 8px;
+            }
+        }
+
+        .highlight {
+            background-color: rgb(248, 91, 39);
+            height: 100px;
+            display: flex;
+
+            .card {
+                margin: 10px 7px 10px 7px;
+                border: 0;
+                background-color: rgb(248, 91, 39);
+
+                img {
+                    background-color: blueviolet;
+                    border: 3px solid rgb(222, 241, 5);
+                    margin-top: 5px;
+                    margin-left: 15px;
+                    height: 55px;
+                    width: 55px;
+                    border-radius: 50%;
+                }
+
+                p {
+                    color: rgb(24, 24, 24);
+                    font-size: 12px;
+                    margin-top: 3px;
+                    margin-left: 23px;
+                }
+            }
+        }
+
+        #carouselExampleIndicators {
+            .carousel-inner {
+                .carousel-item {
+                    img {
+                        height: 250px;
+                    }
+                }
+            }
+        }
+
+        .main-card {
+            background-color: rgb(219, 205, 200);
+            display: flex;
+
+            .card {
+                margin: -15px 5px 7px 5px;
+                border: 0;
+                background-color: rgb(248, 91, 39);
+
+                img {
+                    height: 160px;
+                    width: 155px;
+                }
+            }
+
+        }
+
+        .big-card {
+            img {
+                width: 495px;
+                height: 320px;
+            }
+        }
+        #sections{
+            background-color: rgb(248, 168, 19);
+            h2{
+                font-size: 20px;
+                word-spacing: 5px;
+                /* margin: 10px 10px 10px 10px; */
+                padding: 12px 12px 6px 12px;
+            }
+            .container{
+                background-color: white;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 3px 3px 3px 4px;
+                width: 484px;
+                .card{
+                    /* background-color: aqua; */
+                    margin:auto;
+                    height: 300px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    /* justify-content: space-between; */
+                    /* width: 800px; */
+                    img{
+                    
+                        height:200px;
+                        width: 100%;
+                    }
+                    .card-body{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0;
+                        margin-top: 4px;
+                        /* margin-left:4px ; */
+                        
+                        .btn-primary{
+                            /* display: flex; */
+                            /* justify-content: center; */
+                            margin: 0;
+                            background-color: rgb(251, 20, 20);
+                            width: 50px;
+                            padding: 1px 2px 1px 2px;
+                            border-radius: 0;
+                            height: 22px;
+                            font-size: 11px;
+                            text-align: center;
+                            border: 0;
+                        }
+                        h4{
+                            /* background-color: blueviolet; */
+                            display: flex;
+                            justify-content: center;
+                            margin-top: -20px;
+                            margin-left: 30px;
+                            font-size: 14px;
+                            /* word-spacing: 5px; */
+                            color:rgb(212, 9, 9);
+                        }
+                        h5{
+                            /* padding: 2px; */
+                            margin: 0;
+                        }
+                        h6{
+                            font-size: 13px;
+                            padding: 2px;
+                            margin: 0;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+
+                }
+            }
+            
+            
+        }
+    }
+
+    footer {
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        width: 495px;
+        margin-top: 20px;
+        /* margin-bottom: 5px; */
+        position: fixed;
+        bottom: 0;
+
+        .foot {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: auto;
+            width: 45px;
+
+            /* width: 70%; */
+            /* background-color: blueviolet; */
+            img {
+                align-items: center;
+                margin-left: 8px;
+                height: 25px;
+                width: 25px;
+            }
+
+            h5 {
+                text-align: center;
+                font-size: 12px;
+            }
+
+
+        }
+    }
+}
